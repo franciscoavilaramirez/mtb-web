@@ -1,0 +1,34 @@
+
+    <div class="container background-warning animated fast fadeIn "   >
+      <h2>Bicicletas Rígidas</h2>
+      <div class="row">
+          <div class="col-12 col-md-6 col-lg-4"  *ngFor ="let bike of bikes; " >
+              <a [routerLink] ="['/Bike', bike.id]" class="btn btn-outline-primary"   >
+                  <img [src]="bike.image"
+                       class="img-thumbnail"  >
+                  <ul>
+                      <li>Marca: {{bike.make}}</li>
+                      <li>Cuadro: {{bike.frame}}</li>
+                      <li>Pulgadas: {{bike.inch}}</li>
+                      <li>Horquilla: {{bike.suspension}}</li>
+                      <li>Frenos: {{bike.brakes}}</li>
+                      <li>Precio: {{bike.price}}</li>
+                      <li>Review: {{bike.review}}</li>
+                  </ul>
+              </a>
+          </div>
+            <div class="col-12 col-md-6 col-lg-4"  *ngFor ="let review of reviews" >
+
+                <ul>
+                    <li>nombre: {{review.name}}</li>
+                    <li>comentarios: {{review.comments}}</li>
+                    <li>stars: {{review.stars}}</li>
+                    <li>fdgdfg: {{review.name | json}}</li>
+                </ul>
+            </div>
+        </div>
+      <hr>
+    </div>
+
+
+

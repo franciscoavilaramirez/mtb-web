@@ -1,0 +1,60 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+      <a class="navbar-brand nav-item active " routerLink="/" ><img src="assets/skull.jpg" width="60px">  </a>
+      <button class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+  	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    		    <ul class="navbar-nav">
+      			    <li class="nav-item" routerLinkActive = "active">
+                    <a  class="nav-link"
+                        routerLink="/customersForm"
+
+                        target="_blank">Formulario
+                          <span class="sr-only"></span>
+                    </a>
+      			  </li>
+     			<li class="nav-item" routerLinkActive = "active">
+                <a class="nav-link"
+                   routerLink="/"
+                   routerLinkActive = "">Bicicletas
+                </a>
+      		</li>
+      		<li class="nav-item" routerLinkActive = "active">
+        			<a class="nav-link" href="#">About
+              </a>
+      		</li>
+      		<li class="nav-item dropdown" routerLinkActive = "active">
+              <a  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+		    <div  class="dropdown-menu"
+			        aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input  class=" btn-outline-warning mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  (keyup.enter)="bikeSearch(buscarBici.value)" #buscarBici >
+        </form>
+
+  	</div>
+</nav>

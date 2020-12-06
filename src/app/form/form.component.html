@@ -1,0 +1,44 @@
+<br>
+<form (ngSubmit)="onSubmit()">
+
+<div class="background-gray container animated fast fadeIn " [formGroup]="customersForm"  >
+  <h3>Formulario de contacto</h3><br>
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-4" >
+      <label>Nombre</label>
+          <input class="form-control"
+                type="text"
+                formControlName="name"
+                placeholder="Escribe tú nombre">
+    </div>
+    <div class="col-12 col-md-6 col-lg-4  ">
+      <label>Teléfono</label>
+          <input class="form-control"
+                type="text"
+                formControlName="phone"
+                placeholder="Escribe tú teléfono">
+	</div>
+	<div class="col-12 col-md-6 col-lg-4  ">
+		<label>Email</label>
+        <input  class="form-control"
+                type="text"
+                formControlName="email"
+                placeholder="Escribe tú email">
+  </div>
+  <label>Observaciones</label>
+  <textarea class="form-control"
+            formControlName="comments">
+            Observaciones
+  </textarea>
+
+  </div>
+  <div class="container text-center ">
+    <button class="disabled" [disabled]="customersForm.invalid"
+            type="submit"
+            class="btn btn-success mt-5 mb-5">
+            Enviar datos
+    </button>
+
+  </div>
+</div>
+</form>

@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+.background-white {
+  background-color: white;
+}
+
+.background-red {
+  background-color: #a90105;
+}
+
+.background-gray {
+  background-color: #ddd;
+}
+
+.background-dark-gray {
+  background-color: #444444;
+}
+
+.background-very-dark-gray {
+  background-color: #222222;
+}
+
+.background-light-gray {
+  background-color: #eeeeee;
+}
+
+.white {
+  color: white;
+}
+
+.red {
+  color: #a90105;
+}
+
+.gray {
+  color: #444444;
+}
+
+.light-gray {
+  color: #aaa;
+}
+
+.dark-gray {
+  color: #222222;
+}
+.centrado{
+  margin:10px auto;
+  display:block;
+}
+.disabled {
+  background-color: rgb(203, 224, 10);
+  color: #aaa;
+  cursor: auto;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}

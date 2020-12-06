@@ -1,0 +1,32 @@
+
+
+
+
+<h2>Buscando:<small> {{term}} </small></h2>
+
+<div class="container background-warning animated fast fadeIn "   >
+      <h2>Bicicletas Rígidas</h2>
+      <div class="row">
+          <div class="col-12 col-md-6 col-lg-4"  *ngFor ="let bike of bikes; " >
+              <a [routerLink] ="['/Bike', bike.id]" class="btn btn-outline-primary"   >
+                  <img [src]="bike.image"
+                      class="img-thumbnail"  >
+                  <ul >
+                      <li>Marca: {{bike.make}}</li>
+                      <li>Cuadro: {{bike.frame}}</li>
+                      <li>Pulgadas: {{bike.inch}}</li>
+                      <li>Horquilla: {{bike.suspension}}</li>
+                      <li>Frenos: {{bike.brakes}}</li>
+                      <li>Precio: {{bike.price}}</li>
+
+
+                  </ul>
+              </a>
+          </div>
+      <div class=" centrado row animated fadeIn fast" *ngIf = "bikes.length == 0">
+        <div class="col-12" >
+           <div class="a alert alert-info">
+            No existen resultados de busqueda para el término : {{term | uppercase}}
+           </div>
+        </div>
+    </div>
